@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: black;
+  color: #eee;
+  font-family: monospace;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 90%;
+  text-align: center;
+  border-style: double;
+  padding: 2rem;
+}
+
+h1, .h1 {
+  /* font-family: fantasy; */
+  font-size: calc(2rem + 2vw);
+  line-height: 1;
+  font-family: 'VT323', Fantasy;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  /* font-family: 'Press Start 2P', inherit; */
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+:is(h1,h2,h3,h4,h5.h6).tight {
+  margin: 0;
+}
+
+.glow {
+  /* text-shadow: 0 0 20px #555, 0 0 30px #111, 0 0 40px #111, 0 0 50px #111, 0 0 60px #111, 0 0 70px #111, 0 0 80px #111 */
+}
+
+.btn:hover {
+  cursor: crosshair;
+}
+
+.btn:hover:before {
+  content: '[ ';
+}
+.btn:hover:after {
+  content: ' ]';
+}
+
+.ascii-art {
+  font-family: monospace;
+}
