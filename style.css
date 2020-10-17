@@ -10,9 +10,10 @@ html {
 body {
   background: black;
   color: #eee;
-  font-family: monospace;
+  font-family: 'LoRes-12', monospace;
   min-height: 100%;
   box-sizing: border-box;
+  font-size: 1rem;
   font-size: 1rem;
 
   display: flex;
@@ -35,13 +36,13 @@ h1, .h1 {
   /* font-family: fantasy; */
   font-size: calc(2rem + 2vw);
   line-height: 1;
-  font-family: 'VT323', Fantasy;
+  font-family: 'LoRes-21-Serif', Fantasy;
   text-transform: uppercase;
 }
 
 h2, .h2 {
   /* font-family: 'Press Start 2P', inherit; */
-  font-family: 'VT323', monospace;
+  font-family: 'LoRes-12', monospace;
   text-transform: uppercase;
   font-size: inherit;
   font-weight: bold;
@@ -69,4 +70,15 @@ h2, .h2 {
 
 .ascii-art {
   font-family: monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-logo {
+  max-height: 10rem;
+  display: block;
+  margin: 2rem 0;
 }
