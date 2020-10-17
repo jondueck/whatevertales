@@ -82,3 +82,10 @@ img {
   display: block;
   margin: 2rem 0;
 }
+
+.option:hover:before {
+  content: '[ ';
+}
+.option:hover:after {
+  content: ' ]';
+}
