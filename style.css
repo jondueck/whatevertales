@@ -19,10 +19,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 2rem;
 }
 
 main {
@@ -75,6 +77,13 @@ h2, .h2 {
 img {
   max-width: 100%;
   height: auto;
+
+  /*pixelation*/
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+
 }
 
 .site-logo {
@@ -88,4 +97,49 @@ img {
 }
 .option:hover:after {
   content: ' ]';
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td:first-of-type {
+  text-align: left;
+}
+
+.character {
+  float: left;
+  padding: 2rem;
+  border-right: 1px solid;
+  flex: 1 1 auto;
+}
+
+.character:last-of-type {
+  border-right: 0;
+}
+
+.characters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.site-footer {
+  margin-top: 4rem;
+}
+
+.footer-logo {
+  max-width: 2rem;
+}
+
+.footer-logo .w {
+  color: red;
+}
+
+a {
+  color: inherit;
 }
